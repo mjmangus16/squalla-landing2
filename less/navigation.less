@@ -1,0 +1,26 @@
+// Navigation code here
+
+.nav-container {
+  .width(90%, 1150px);
+  text-align: center;
+  background-color: @nav-bg-color;
+  .shadowRadius();
+
+  img {
+    width: 250px;
+    padding: 15px;
+  }
+
+  nav {
+    .flexProperties(space-between, row);
+    max-width: 500px;
+    margin: auto;
+    font-size: 1.5rem;
+    padding-bottom: 10px;
+
+    a {
+      text-decoration: none;
+      color: @font-color;
+    }
+  }
+}

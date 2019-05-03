@@ -1,0 +1,41 @@
+// Home Content
+
+.home {
+  height: 2000px;
+  .width(90%, 1150px);
+  text-align: center;
+  .top-image {
+    .width(100%, 800px);
+    .shadowRadius();
+  }
+
+  .section1 {
+    .flexProperties(space-between, row);
+
+    div {
+      width: 30%;
+      height: auto;
+      background-color: @nav-bg-color;
+      .shadowRadius();
+
+      h4 {
+        padding: 10px;
+        color: @font-color;
+      }
+
+      img {
+        width: 100%;
+        padding: 1rem;
+      }
+
+      button {
+        width: calc(100% - 2rem);
+        padding: 0.75rem 0;
+        margin-bottom: 1rem;
+        border: none;
+        color: @font-color;
+        background-color: #f7c244;
+      }
+    }
+  }
+}
