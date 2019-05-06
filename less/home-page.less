@@ -4,37 +4,53 @@
   height: 2000px;
   .width(90%, 1150px);
   text-align: center;
+
+  @media @phone {
+    width: 95%;
+  }
+
   .top-image {
     .width(100%, 800px);
     .shadowRadius();
   }
 
-  .section1 {
-    .flexProperties(space-between, row);
+  .top-image1 {
+    @media @phone {
+      display: none;
+    }
+  }
 
-    div {
+  .top-image2 {
+    display: none;
+    @media @phone {
+      display: inline;
+    }
+  }
+
+  .section1 {
+    .flexProperties(space-between, row, wrap);
+
+    > div {
       width: 30%;
+      min-width: 275px;
       height: auto;
       background-color: @nav-bg-color;
       .shadowRadius();
 
+      @media @phone {
+        width: 100%;
+      }
+
       h4 {
         padding: 10px;
-        color: @font-color;
       }
 
       img {
         width: 100%;
-        padding: 1rem;
       }
 
-      button {
-        width: calc(100% - 2rem);
-        padding: 0.75rem 0;
-        margin-bottom: 1rem;
-        border: none;
-        color: @font-color;
-        background-color: #f7c244;
+      .learn-more-container {
+        padding: 7px 0px;
       }
     }
   }

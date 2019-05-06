@@ -6,11 +6,12 @@
   margin: auto;
 }
 
-.flexProperties(@justify, @direction) {
+.flexProperties(@justify, @direction, @wrap) {
   display: flex;
   justify-content: @justify;
   flex-direction: @direction;
   align-items: center;
+  flex-wrap: @wrap;
 }
 
 .shadowRadius() {

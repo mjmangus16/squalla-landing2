@@ -141,8 +141,10 @@ h1,
 h2,
 h3,
 h4,
-h5 {
+h5,
+h6 {
   font-family: "Russo One", sans-serif;
+  color: #404040;
 }
 h1 {
   font-size: 3.6rem;
@@ -158,6 +160,9 @@ h4 {
 }
 h5 {
   font-size: 2rem;
+}
+h6 {
+  font-size: 1.6rem;
 }
 p {
   font-size: 1.6rem;
@@ -177,23 +182,53 @@ p {
   border-radius: 1rem;
   margin: 10px auto;
 }
+@media (max-width: 500px) {
+  .nav-container {
+    width: 100%;
+    margin: 0px;
+    border-radius: 0;
+  }
+}
 .nav-container img {
   width: 250px;
   padding: 15px;
+}
+@media (max-width: 500px) {
+  .nav-container img {
+    width: 200px;
+  }
 }
 .nav-container nav {
   display: flex;
   justify-content: space-between;
   flex-direction: row;
   align-items: center;
+  flex-wrap: nowrap;
   max-width: 500px;
   margin: auto;
   font-size: 1.5rem;
   padding-bottom: 10px;
 }
+@media (max-width: 500px) {
+  .nav-container nav {
+    display: flex;
+    justify-content: space-around;
+    flex-direction: column;
+    align-items: center;
+    flex-wrap: nowrap;
+    padding-bottom: 0px;
+  }
+}
 .nav-container nav a {
   text-decoration: none;
   color: #404040;
+}
+@media (max-width: 500px) {
+  .nav-container nav a {
+    padding: 10px 0px;
+    border-top: 1px solid #404040;
+    width: 100%;
+  }
 }
 .home {
   height: 2000px;
@@ -201,6 +236,11 @@ p {
   max-width: 1150px;
   margin: auto;
   text-align: center;
+}
+@media (max-width: 500px) {
+  .home {
+    width: 95%;
+  }
 }
 .home .top-image {
   width: 100%;
@@ -210,33 +250,46 @@ p {
   border-radius: 1rem;
   margin: 10px auto;
 }
+@media (max-width: 500px) {
+  .home .top-image1 {
+    display: none;
+  }
+}
+.home .top-image2 {
+  display: none;
+}
+@media (max-width: 500px) {
+  .home .top-image2 {
+    display: inline;
+  }
+}
 .home .section1 {
   display: flex;
   justify-content: space-between;
   flex-direction: row;
   align-items: center;
+  flex-wrap: wrap;
 }
-.home .section1 div {
+.home .section1 > div {
   width: 30%;
+  min-width: 275px;
   height: auto;
   background-color: #e6e6e6;
   box-shadow: 2px 2px 10px;
   border-radius: 1rem;
   margin: 10px auto;
 }
-.home .section1 div h4 {
+@media (max-width: 500px) {
+  .home .section1 > div {
+    width: 100%;
+  }
+}
+.home .section1 > div h4 {
   padding: 10px;
-  color: #404040;
 }
-.home .section1 div img {
+.home .section1 > div img {
   width: 100%;
-  padding: 1rem;
 }
-.home .section1 div button {
-  width: calc(100% - 2rem);
-  padding: 0.75rem 0;
-  margin-bottom: 1rem;
-  border: none;
-  color: #404040;
-  background-color: #f7c244;
+.home .section1 > div .learn-more-container {
+  padding: 7px 0px;
 }
