@@ -43,6 +43,7 @@
 
       h4 {
         padding: 10px;
+        text-align: center;
       }
 
       img {
@@ -51,6 +52,49 @@
 
       .learn-more-container {
         padding: 7px 0px;
+        text-align: center;
+
+        div {
+          display: none;
+        }
+      }
+    }
+
+    .section1-1-active,
+    .section1-2-active,
+    .section1-3-active {
+      width: 100%;
+
+      @media @desktop {
+        order: -1;
+      }
+
+      div {
+        .flexProperties(space-between, row, nowrap);
+        @media @phone {
+          .flexProperties(space-between, column, nowrap);
+        }
+        img {
+          width: 50%;
+
+          @media @phone {
+            width: 100%;
+          }
+        }
+
+        div {
+          h6 {
+            display: none;
+          }
+
+          div {
+            display: block;
+            width: 50%;
+            ul {
+              font-size: 2rem;
+            }
+          }
+        }
       }
     }
   }
