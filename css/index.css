@@ -342,19 +342,57 @@ p {
     width: 100%;
   }
 }
+.home .section1 .section1-1-active div div,
+.home .section1 .section1-2-active div div,
+.home .section1 .section1-3-active div div {
+  width: 50%;
+  text-align: center;
+}
 .home .section1 .section1-1-active div div h6,
 .home .section1 .section1-2-active div div h6,
 .home .section1 .section1-3-active div div h6 {
   display: none;
 }
+@media (max-width: 500px) {
+  .home .section1 .section1-1-active div div,
+  .home .section1 .section1-2-active div div,
+  .home .section1 .section1-3-active div div {
+    width: 100%;
+  }
+}
 .home .section1 .section1-1-active div div div,
 .home .section1 .section1-2-active div div div,
 .home .section1 .section1-3-active div div div {
   display: block;
-  width: 50%;
+  width: 100%;
 }
 .home .section1 .section1-1-active div div div ul,
 .home .section1 .section1-2-active div div div ul,
 .home .section1 .section1-3-active div div div ul {
   font-size: 2rem;
+  width: 100%;
+  color: #404040;
+}
+@media (max-width: 500px) {
+  .home .section1 .section1-1-active div div div ul,
+  .home .section1 .section1-2-active div div div ul,
+  .home .section1 .section1-3-active div div div ul {
+    font-size: 1.75rem;
+  }
+}
+.home .section1 .section1-1-active div div div ul li,
+.home .section1 .section1-2-active div div div ul li,
+.home .section1 .section1-3-active div div div ul li {
+  padding: 15px;
+  font-weight: 800;
+}
+.home .section1 .section1-1-active div div button,
+.home .section1 .section1-2-active div div button,
+.home .section1 .section1-3-active div div button {
+  margin: 25px auto 10px;
+  width: 50%;
+  padding: 10px 0px;
+  border-radius: 5px;
+  background-color: #ee8819;
+  font-size: 1.5rem;
 }
