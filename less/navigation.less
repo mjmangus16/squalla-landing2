@@ -23,10 +23,14 @@
 
   nav {
     .flexProperties(space-between, row, nowrap);
-    max-width: 500px;
+
     margin: auto;
     font-size: 1.5rem;
     padding-bottom: 10px;
+
+    @media @desktop {
+      max-width: 500px;
+    }
 
     @media @phone {
       .flexProperties(space-around, column, nowrap);

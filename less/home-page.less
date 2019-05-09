@@ -1,7 +1,6 @@
 // Home Content
 
 .home {
-  height: 2000px;
   .width(90%, 1150px);
   text-align: center;
 
@@ -47,12 +46,28 @@
       }
 
       img {
-        width: 100%;
+        width: 98%;
       }
 
       .learn-more-container {
         padding: 7px 0px;
         text-align: center;
+
+        .learn-more-button {
+          width: 75%;
+          padding: 5px;
+          background-color: @btn-color;
+          border: none;
+          box-shadow: 1px 1px 5px;
+
+          &:hover {
+            box-shadow: 0px 0px 0px;
+          }
+
+          &:active {
+            box-shadow: 0px 0px 0px;
+          }
+        }
 
         div {
           display: none;
@@ -75,17 +90,20 @@
           .flexProperties(space-between, column, nowrap);
         }
         img {
-          width: 50%;
+          width: calc(50% - 10px);
+          margin: auto auto 10px 10px;
 
           @media @phone {
-            width: 100%;
+            width: 98%;
+            margin: auto;
           }
         }
 
         div {
           width: 50%;
           text-align: center;
-          h6 {
+
+          .learn-more-button {
             display: none;
           }
 
@@ -115,13 +133,39 @@
           button {
             margin: 25px auto 10px;
             width: 50%;
-            padding: 10px 0px;
-            border-radius: 5px;
+            padding: 5px;
             background-color: @btn-color;
-            font-size: 1.5rem;
+            border: none;
+            box-shadow: 1px 1px 5px;
+
+            &:hover {
+              box-shadow: 0px 0px 0px;
+            }
+
+            &:active {
+              box-shadow: 0px 0px 0px;
+            }
           }
         }
       }
+    }
+  }
+
+  .bottom-image {
+    .width(100%, 800px);
+    .shadowRadius();
+  }
+
+  .bottom-image1 {
+    @media @phone {
+      display: none;
+    }
+  }
+
+  .bottom-image2 {
+    display: none;
+    @media @phone {
+      display: inline;
     }
   }
 }
