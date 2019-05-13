@@ -168,6 +168,39 @@
       display: inline;
     }
   }
+
+  .section2 {
+    .flexProperties(space-between, row, wrap);
+
+    > div {
+      width: 100%;
+      min-width: 275px;
+      height: auto;
+      background-color: @nav-bg-color;
+      .shadowRadius();
+
+      .about-content {
+        width: 75%;
+        margin: auto;
+        padding: 10px;
+
+        h4 {
+          text-align: center;
+        }
+
+        p {
+          padding: 15px 0px 25px;
+          text-align: left;
+          color: @font-color;
+        }
+
+        .orange-text {
+          color: green;
+          font-weight: bold;
+        }
+      }
+    }
+  }
 }
 
 // test

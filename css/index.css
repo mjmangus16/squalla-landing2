@@ -472,3 +472,36 @@ footer {
     display: inline;
   }
 }
+.home .section2 {
+  display: flex;
+  justify-content: space-between;
+  flex-direction: row;
+  align-items: center;
+  flex-wrap: wrap;
+}
+.home .section2 > div {
+  width: 100%;
+  min-width: 275px;
+  height: auto;
+  background-color: #e6e6e6;
+  box-shadow: 2px 2px 10px;
+  border-radius: 1rem;
+  margin: 10px auto;
+}
+.home .section2 > div .about-content {
+  width: 75%;
+  margin: auto;
+  padding: 10px;
+}
+.home .section2 > div .about-content h4 {
+  text-align: center;
+}
+.home .section2 > div .about-content p {
+  padding: 15px 0px 25px;
+  text-align: left;
+  color: #404040;
+}
+.home .section2 > div .about-content .orange-text {
+  color: green;
+  font-weight: bold;
+}
