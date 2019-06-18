@@ -249,6 +249,15 @@ footer {
   display: absolute;
   bottom: 0;
 }
+footer .social-icons {
+  width: 150px;
+  margin: auto auto 15px;
+  display: flex;
+  justify-content: space-around;
+}
+footer .social-icons a {
+  color: #404040;
+}
 @media (max-width: 700px) {
   footer {
     width: 100%;
